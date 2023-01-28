@@ -1,0 +1,13 @@
+<h1>TEST</h1>
+
+<input type="text" name="letter" [(ngModel)]="letter" placeholder="Saisissez une lettre.">
+
+<button (click)="api()">Valider</button>
+
+<div *ngFor = "let cocktail of myArray">
+
+    <h2>{{cocktail.strDrink}}</h2>
+
+    <img [src]="cocktail.strDrinkThumb" alt="picture">
+
+</div>
