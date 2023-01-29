@@ -1,6 +1,7 @@
 <h1>TEST</h1>
 
-<input type="text" name="letter" [(ngModel)]="letter" placeholder="Saisissez une lettre.">
+<label for="cocktail">Rechercher un cocktail: </label>
+<input id="cocktail" type="text" name="letter" [(ngModel)]="letter" placeholder="Saisissez une lettre." required maxlength="1"> 
 
 <button (click)="api()">Valider</button>
 
